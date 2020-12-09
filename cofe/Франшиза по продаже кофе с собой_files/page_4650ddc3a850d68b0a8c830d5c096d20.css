@@ -1,0 +1,540 @@
+
+
+/* Start:/bitrix/templates/franshiza_new_test/components/bitrix/news.list/mini-blog-franchise-v2/style.css?15965466601494*/
+.mini-blog .wrap {
+	max-width: 1630px;
+    margin: auto;
+}
+
+.mini-blog .items {
+	display: flex;
+	flex-direction: row;
+	margin-bottom: 40px;
+}
+.mini-blog .item {
+	margin-right: 10px;
+	max-width: 20%;
+	padding: 2rem;
+    border: 1px solid #52ae32;
+	font-size: 14px;
+	font-weight: 300;
+	position: relative;
+}
+.mini-blog .item .bg {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	left: 0px;
+	top: 0px;
+	z-index: 0;
+	filter: blur(2px);
+}
+.mini-blog .item .bg:before {
+	content: "";
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: rgba(0,0,0,.5);
+	left: 0px;
+	top: 0px;
+}
+.mini-blog .item a {
+	color: #fff;
+	text-decoration: none;
+	position: relative;
+	z-index: 10;
+}
+.mini-blog .item .title {
+	margin-bottom: 15px;
+	font-size: 16px;
+}
+.mini-blog .item:hover {
+	background: #52ae32;
+	color: #fff;
+}
+.mini-blog .item:hover a {
+	color: #fff;
+}
+.mini-blog .item:hover .title {
+	color: #fff;
+}
+
+.mini-blog .link-all {
+	text-align: center;
+    color: #52ae32;
+}
+.mini-blog .link-all:hover {
+	color: #000;
+}
+
+.mini-blog.theme-while .item a {
+	color: #000;
+}
+
+
+@media (max-width: 991.98px) {
+	.mini-blog .items {
+		display: block;
+	}
+	.mini-blog .item:last-child {
+		margin-right: 0px;
+	}
+	.mini-blog .item:not(:last-child) {
+	    margin-right: 0;
+	}
+	.mini-blog .item {
+		margin-bottom: 15px;
+		padding: 1rem;
+		max-width: 100%;
+	}
+}
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+	.mini-blog .item {
+		max-width: 100%;
+	}
+	.mini-blog .item:nth-child(5) {
+		display: none;
+	}
+}
+
+/* End */
+
+
+/* Start:/bitrix/components/bitrix/map.yandex.system/templates/.default/style.css?1476352054666*/
+div.bx-yandex-map {color: black; font-size: 11px;}
+div.bx-yandex-map div.YMaps-b-balloon-content {color: black; font-size: 11px;}
+div.bx-popup-form div.bx-yandex-map div.YMaps-b-balloon-point div.YMaps-b-balloon div.YMaps-b-balloon-wrap table.YMaps-b-balloon-frame td {
+	padding: 0px !important;
+}
+
+
+div.bx-popup-form div.bx-yandex-map div.YMaps-b-balloon-point div.YMaps-b-balloon div.YMaps-b-balloon-wrap table.YMaps-b-balloon-frame td textarea{
+	font-size: 11px;
+}
+
+
+div.bx-popup-form div.bx-yandex-map div.YMaps-b-balloon-point div.YMaps-b-balloon div.YMaps-b-balloon-wrap table.YMaps-b-balloon-frame td.YMaps-b-balloon-b {
+	background-image: none !important;
+}
+
+/* End */
+
+
+/* Start:/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/style.css?15965466608846*/
+.mapPoints {
+  width: 100%;
+  height: calc(100vh - 100px);
+  position: relative;
+/*  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/map.jpg");*/
+    background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iMjAzIiBoZWlnaHQ9IjgxIiB2aWV3Qm94P…QuMSAxLjUuMSAzLjIxLjEgMy4yMWgtNi4yM3ptMCAwIiBmaWxsPSIjNTk1OTU5Ii8+PC9zdmc+) #fafafa center no-repeat;
+}
+/*.mapPoints ymaps {
+  z-index: 100;
+}*/
+.mapPoints > .container {
+  height: 100%;
+}
+.mapPoints > .container > .row {
+  height: 100%;
+  position: relative;
+}
+.mapPoints .listSity {
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 210px;
+  height: 100%;
+  background: rgba(30,28,26,0.85);
+  z-index: 200;
+}
+.mapPoints .listSity header {
+  position: relative;
+  padding-top: 15px;
+}
+.mapPoints .listSity header:before {
+  content: "";
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/after-line.png");
+  width: 160px;
+  height: 16px;
+  position: absolute;
+  left: calc(50% - 80px);
+  bottom: -16px;
+}
+.mapPoints .listSity header h1 {
+  color: #8dc63f;
+  font-size: 18px;
+  line-height: 30px;
+  text-transform: uppercase;
+}
+.mapPoints .listSity main {
+  height: calc(100% - 140px);
+  width: 100%;
+  padding-top: 16px;
+  position: absolute;
+  bottom: 45px;
+  left: 0px;
+}
+.mapPoints .listSity main .owl-list-city {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  text-align: left;
+}
+.mapPoints .listSity main .owl-list-city .nav-prev {
+  width: 58px;
+  height: 20px;
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/icon-nav-carousel-prev-vertical-black.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+  cursor: pointer;
+}
+.mapPoints .listSity main .owl-list-city .nav-prev:hover {
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/icon-nav-carousel-prev-vertical-green.svg");
+  background-repeat: no-repeat;
+}
+.mapPoints .listSity main .owl-list-city .nav-next {
+  width: 58px;
+  height: 20px;
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/icon-nav-carousel-next-vertival-black.svg");
+  background-repeat: no-repeat;
+  margin: auto;
+  cursor: pointer;
+}
+.mapPoints .listSity main .owl-list-city .nav-next:hover {
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/icon-nav-carousel-next-vertival-green.svg");
+  background-repeat: no-repeat;
+}
+.mapPoints .listSity main .owl-list-city .own-content {
+  padding-left: 16px;
+  height: calc(100% - 40px);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  padding-top: 3px;
+}
+.mapPoints .listSity main .owl-list-city a {
+  color: #ddeec5;
+  text-decoration: none;
+  position: relative;
+}
+.mapPoints .listSity main .owl-list-city a span {
+  font-size: 16px;
+  line-height: 36px;
+}
+.mapPoints .listSity main .owl-list-city a:hover {
+  color: #8dc63f;
+}
+.mapPoints .listSity main .owl-list-city a:hover:before {
+  content: "";
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/map-list-active-green.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  left: -10px;
+  top: -14px;
+}
+.mapPoints .listSity main .owl-list-city a.active {
+  color: #8dc63f;
+}
+.mapPoints .listSity main .owl-list-city a.active:before {
+  content: "";
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/../images/design/map-list-active-green.svg");
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 180px;
+  height: 45px;
+  position: absolute;
+  left: -10px;
+  top: -14px;
+}
+
+.mapPoints {
+  overflow: hidden;
+}
+
+.mapPoints .contentCity {
+  width: 210px;
+  position: absolute;
+  height: 100%;
+  left: 0px;
+  top: 0px;
+  background: rgba(221,238,197,0.73);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, .0),     
+        5px 0 6px -2px rgba(0, 0, 0, 0.21),     
+        20px 0px 20px -18px rgba(0, 0, 0, 0.21),     
+        0 0 40px rgba(0, 0, 0, .1) inset;
+  z-index: 100;
+  transition: left 0.5s ease; 
+}
+
+.mapPoints .contentCity.active {
+  left: 210px;
+}
+
+.mapPoints .contentCity header {
+    position: relative;
+    padding-top: 15px;
+}
+.mapPoints .contentCity main {
+    height: calc(100% - 140px);
+    width: 100%;
+    padding-top: 16px;
+    position: absolute;
+    bottom: 45px;
+    left: 0px;
+    padding: 0px 15px;
+}
+
+.mapPoints .contentCity main address .address-city {
+  font-size: 18px;
+  color: #1f1a17;
+  line-height: 36px;
+  margin-bottom: 12px;
+}
+.mapPoints .contentCity main address p {
+  color: #625e5c;
+  font-size: 16px;
+  line-height: 16px;
+  letter-spacing: -0.5px
+}
+
+.mapPoints .contentCity main .mini-photo {
+  text-align: center;
+  margin: 40px auto 0px auto;
+  
+/*  border-radius: 100%;
+  overflow: hidden;
+  width: 80px;
+  height: 80px;*/
+}
+.mapPoints .contentCity main .mini-photo img {
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  cursor: pointer;
+}
+
+.mapPoints .contentImg {
+  position: absolute;
+  right: 0px;
+  /*top: -100%;*/
+  top: 0;
+  width: calc(100% - 420px);
+  height: 100%;
+  background: rgba(30,28,26,0.85);
+/*  z-index: 200;*/
+  transition: top 0.5s ease; 
+  overflow-y: scroll;
+/*  opacity: 0;*/
+  z-index: -100;
+}
+/*.mapPoints .contentImg.active {
+  top: 0%;
+}*/
+
+.mapPoints .contentImg img {
+  max-width: 100%;
+}
+  
+.mapPoints .contentCity main .mini-photo .close-img {
+  display: block;
+    margin-top: 15px;
+    cursor: pointer;
+}
+
+.mapPoints .close-content-city {
+  text-align: right;
+  padding-right: 20px;
+  padding-top: 10px;
+  display: inline-block;
+  float: right;
+}
+
+.mapPoints .close-content-city span {
+  cursor: pointer;
+}
+
+
+
+
+.map-section {
+  width: 100%;
+  margin-bottom: 40px;
+}
+/*.map-section .row {
+  width: 100%;
+}*/
+.map-section .col {
+  width: 100%;
+}
+
+.map-section #map {
+    height: 350px;
+    width: 100%;
+    max-width: 100%;
+    /*min-width: 360px;*/
+}
+@media (min-width: 1200px) {
+  .map-section {
+    /*height: 845px;*/
+  }
+  .map-section #map {
+    /*height: 100%;*/
+    height: 700px;
+  }
+}
+.map-section .col,
+.map-section .row,
+.map-section .d-flex {
+  height: 100%;
+}
+
+.map-section h2 {
+    text-align: center;
+    font-family: 'stolzlregular';
+    line-height: 120%;
+    font-size: 36px;
+     margin-bottom: 30px;
+     margin-top: 0px;
+}
+@media (min-width: 992px) {
+  .map-section h2 {
+    font-size: 48px; 
+    margin-bottom: 50px;
+     margin-top: 30px;
+  } 
+}
+@media (min-width: 1200px) {
+  .map-section h2 {
+    margin-top: 0px;
+  } 
+}
+
+@media (min-width: 1600px) {
+  .map-section h2 {
+    font-size: 60px;
+     margin-bottom: 100px;
+  } 
+}
+@media (min-width: 1800px) {
+  .map-section h2 {
+    font-size: 72px;
+    line-height: 66.05px;
+    margin-bottom: 150px;
+  } 
+}
+
+.list-city {
+  max-width: 860px;
+  width: 100%;
+  margin: auto;
+  padding: 0px 50px;
+  @media (min-width: 1600px) {
+    padding: 0px;
+  }
+}
+
+.list-city .item-link {
+  width: 100%;
+  float: left;
+  margin-bottom: 18px;
+  
+}
+@media (min-width: 992px) {
+  .list-city .item-link {
+    width: 50%;
+  }
+}
+@media (min-width: 1600px) {
+  .list-city .item-link {
+    width: 33%;
+  }
+}
+
+
+.list-city .item-link a {
+  font-size: 18px;
+  line-height: 24px;
+  color: #000000;
+  white-space: nowrap;
+}
+.list-city .item-link a:hover,
+.list-city .item-link a.active {
+  color: #52ae32;
+}
+
+.owl-carousel-city .owl-nav [class*=owl-] {
+  padding: 0px;
+  margin: 0px;
+  height: 25px;
+  width: 25px;
+  background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/img/icon-arrows.png") center no-repeat!important;
+  background-size: contain!important; }
+  @media (min-width: 1600px) {
+    .owl-carousel-city .owl-nav [class*=owl-] {
+      height: 40px;
+      width: 30px; } }
+  .owl-carousel-city .owl-nav [class*=owl-]:hover {
+    background: url("/bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/img/icon-arrows.png") center no-repeat!important;;
+    background-size: contain!important;; }
+  .owl-carousel-city .owl-nav [class*=owl-].owl-prev {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+    position: absolute; 
+    left: -10px;
+    top: 50%;
+    margin-top: -20px;}
+    @media (min-width: 1720px) {
+      .owl-carousel-city .owl-nav [class*=owl-].owl-prev {
+        left: 10px;
+    top: 50%;
+    margin-top: -20px; } }
+  .owl-carousel-city .owl-nav [class*=owl-].owl-next {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    margin-top: -20px; }
+    @media (min-width: 1600px) {
+      .owl-carousel-city .owl-nav [class*=owl-].owl-next {
+        right: 28px;
+    top: 50%;
+    margin-top: -20px; } }
+
+@media (max-width: 767.98px) {
+  .col-map {
+    padding: 0px!important;
+  }
+}
+
+.owl-carousel-mobile-city .item a {
+  font-size: 16px;
+  color: #000000;
+  line-height: 24px;
+}
+
+.owl-carousel-mobile-city {
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+.address-info___section {
+  height: 650px;
+  width: 100%;
+}
+/* End */
+/* /bitrix/templates/franshiza_new_test/components/bitrix/news.list/mini-blog-franchise-v2/style.css?15965466601494 */
+/* /bitrix/components/bitrix/map.yandex.system/templates/.default/style.css?1476352054666 */
+/* /bitrix/templates/franshiza_new_test/components/bitrix/news.list/map/style.css?15965466608846 */
